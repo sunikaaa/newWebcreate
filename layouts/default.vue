@@ -1,11 +1,15 @@
 <template>
   <div>
-    <header class="flex">
-      <div class="flex_cell">Logo</div>
+    <header class="theflex">
+      <div class="theflex_cell">Logo</div>
+      <div class="theflex_cell">
+        <input type="text" placeholder="seachbar" />
+      </div>
     </header>
     <nuxt />
+    <hr />
     <div>
-      <footer>mini menu</footer>
+      <footer class="footer">footer</footer>
     </div>
   </div>
 </template>
@@ -21,6 +25,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: hsl(240, 1%, 25%);
   color: #f0f0f0;
 }
 
@@ -60,12 +65,26 @@ html {
   background-color: #35495e;
 }
 
-.flex {
+.theflex {
   display: flex;
-  height: 30px;
-  background: #35495e;
+  height: 60px;
+  background: #2c2c2c;
+  align-items: center;
+  justify-content: space-between;
 }
-.flex_cell {
-  justify-content: flex-start;
+.theflex_cell {
+  /* justify-content: flex-start; */
+  /* margin-bottom: 10px; */
+  line-height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+hr {
+  margin-top: 10px;
 }
 </style>
