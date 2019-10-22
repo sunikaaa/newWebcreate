@@ -1,5 +1,7 @@
 module.exports = {
   mode: 'universal',
+  srcDir: "./client/",
+  serverMiddleware:["~~/api/"],
   /*
    ** Headers of the page
    */

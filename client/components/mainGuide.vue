@@ -15,8 +15,9 @@ export default {
 <style lang="scss" scoped>
 .main_img {
   //   color: blue;
-  width: 40vh;
-  height: 40vh;
+  box-sizing: border-box;
+
+  // height: 40vh;
   //   background: red;
 }
 </style>

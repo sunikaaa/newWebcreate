@@ -33,6 +33,11 @@ export default {
 .guide {
   margin-top: 20px;
 }
+.main {
+  height: 40vh;
+  width: 40%;
+  background: blue;
+}
 .flex {
   display: flex;
   justify-content: space-around;
